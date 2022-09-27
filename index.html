@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <title>Bootstrap Example</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/5liqSBa0P31kKN6-FJ16thREVBlDNLoBQPMEB9LPx9xPIKY8tESDyTkouWRPBpX8Vg=w240-h480-rw" type="image/x-icon">
 
+    <title>Learn Bootstrap</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
     </style>
   </head>
@@ -19,77 +21,151 @@
 
     <!-- Example Code -->
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav id="mynav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top position-sticky">
         <div class="container">
-          <a class="navbar-brand" href="#">wquib</a>
+          <a class="navbar-brand" href="#home">Website with Bootstrap</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
 
-    <div class="jumbotron text-center py-4 bg-">
-        <img src="TS-Logo.png" class="rounded mx-auto d-block" style="max-width: 120px; max-height: 150px;">
-        <h1 class="display-4 fw-bold py-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
+    <div data-bs-spy="scroll" data-bs-target="#mynav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+        <div id="home" class="jumbotron text-center py-4">
+            <img src="TS-Logo.png" class="rounded mx-auto d-block" style="max-width: 120px; max-height: 150px;">
+            <h1 class="display-4 fw-bold py-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+        </div>
+        <!-- About -->
+        <div id="about">
+            <div class="container bg-secondary rounded text-light">
+                <div class="row">
+                    <div class="col text-center pt-5">
+                        <h2 class="fw-bold">About</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center py-5">
+                    <div class="col-md-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, id sunt adipisci ut tempore sint odio soluta temporibus libero accusantium explicabo! Aperiam odio exercitationem sit, at repudiandae rem porro asperiores quia eos commodi dolorum nam expedita, beatae iste, voluptatibus nemo. Nam itaque inventore alias repellendus assumenda sint? Nostrum iste obcaecati provident? Deleniti sunt exercitationem iure esse necessitatibus molestiae neque eius! Accusamus cupiditate doloremque veniam! Provident, voluptatem esse placeat culpa iste, dolor optio aliquid numquam libero, molestias sint non suscipit natus cupiditate enim ducimus ipsa explicabo architecto incidunt nostrum quis. Eos, facere in? Asperiores fuga voluptatum laborum expedita sapiente minima, veniam omnis incidunt hic vitae fugiat ab, enim cupiditate fugit tenetur quod, possimus eaque ut deleniti aperiam assumenda facere eos dignissimos?
+                    </div>
+                    <div class="col-md-5">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam minima corporis quaerat quae aut laudantium alias magni quis architecto iure, autem numquam hic. Natus, ipsa ullam similique animi commodi ducimus exercitationem explicabo est obcaecati ex neque officia, necessitatibus repudiandae, adipisci quas placeat facilis! Ipsam, tempora non quidem, reprehenderit aperiam sunt officia voluptate, qui eius quia quod accusantium accusamus? Tenetur, perspiciatis. Culpa saepe dolore, temporibus exercitationem doloremque voluptatibus repellendus quibusdam possimus itaque nobis sit. Totam iusto eos ut laborum magni accusamus quisquam corporis numquam tempore quaerat unde, quidem vero voluptate repellat fugit eaque repellendus beatae iure cum nisi nemo? Recusandae tenetur quia ipsa cum officiis, dolorem eligendi. Necessitatibus esse tenetur pariatur. Sit et molestiae magnam illum odio blanditiis ab doloremque fugit.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gallery" class="py-5">
+            <div class="container">
+            <div class="row">
+                <div class="col text-center mb-3">
+                    <h2 class="fw-bold">My Gallery</h2>
+                </div>
+            </div>
+            <!-- Card -->
+            <div class="row justify-content-center">
+                <div class="col-4 mb-3">
+                    <div class="card" style="width: 18rem">
+                        <img src="https://play-lh.googleusercontent.com/5liqSBa0P31kKN6-FJ16thREVBlDNLoBQPMEB9LPx9xPIKY8tESDyTkouWRPBpX8Vg=w240-h480-rw" class="card-img-top" alt="pic1" />
+                        <div class="card-body">
+                            <h5 class="card-title">First Picture</h5>
+                            <p class="card-text">Duck</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pic-1">View Image</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card" style="width: 18rem">
+                        <img src="https://i.pinimg.com/originals/48/b0/07/48b0070533da33f05353cd258c36d445.png" class="card-img-top" alt="pic2" />
+                        <div class="card-body">
+                            <h5 class="card-title">Second Picture</h5>
+                            <p class="card-text">Hmmm...</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pic-2">View Image</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card" style="width: 18rem">
+                        <img src="https://i.pinimg.com/originals/a9/fa/7c/a9fa7ca4a8b8f629233e9fad603d4ed1.png" class="card-img-top" alt="pic3" />
+                        <div class="card-body">
+                            <h5 class="card-title">Third Picture</h5>
+                            <p class="card-text">Creeper</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pic-3">View Image</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Modal for first pic -->
+        <div class="modal fade" id="pic-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hanya sebuah gambar bebek!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://play-lh.googleusercontent.com/5liqSBa0P31kKN6-FJ16thREVBlDNLoBQPMEB9LPx9xPIKY8tESDyTkouWRPBpX8Vg=w240-h480-rw" class="img-thumbnail" />
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal for second pic -->
+        <div class="modal fade" id="pic-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">sus</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://i.pinimg.com/originals/48/b0/07/48b0070533da33f05353cd258c36d445.png" class="img-thumbnail" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for third picture -->
+        <div class="modal fade" id="pic-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Creeper</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://i.pinimg.com/originals/a9/fa/7c/a9fa7ca4a8b8f629233e9fad603d4ed1.png" class="img-thumbnail" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="about">
-        <div class="container bg-secondary rounded text-light">
-            <div class="row">
-                <div class="col text-center py-4">
-                    <h2 class="fw-bold">About</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center py-5">
-                <div class="col-md-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis asperiores animi optio repellat accusantium, facere aliquid minima vero, veniam quae natus ipsum aperiam corrupti vitae quis deleniti aspernatur voluptates aut.
-                </div>
-                <div class="col-md-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consectetur voluptatibus a porro ratione ipsa sunt, libero itaque qui necessitatibus voluptas impedit obcaecati? Quis a incidunt natus. Inventore, quam consequuntur.
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="carouselExampleIndicators" class="carousel slide py-1" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://images.tokopedia.net/img/KRMmCm/2022/6/22/c6fa942e-31b6-4a64-bd29-7599f47c9dc2.jpg" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.tokopedia.net/img/KRMmCm/2022/6/22/c6fa942e-31b6-4a64-bd29-7599f47c9dc2.jpg" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.tokopedia.net/img/KRMmCm/2022/6/22/c6fa942e-31b6-4a64-bd29-7599f47c9dc2.jpg" class="d-block w-100">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    <footer class="py-3 bg-primary fixed-bottom">
+        <div class="container text-left text-white-50">Bootstrap 5</div>
+      </footer>
   </body>
 </html>
